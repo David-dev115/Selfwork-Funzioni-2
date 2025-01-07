@@ -12,24 +12,18 @@ function generaNumeri(numero_N) {
 for ( let i = 1; i <= numero_N; i++) {
 
 
-    if ( i % 3 == 0) { 
-        i = `Fizz`;
-        console.log(i);
+    if ( i % 15 == 0) { 
+        console.log(`fizzBuzz`);
     } else if ( i % 5 == 0) {
-        i = `Buzz`;
-        console.log(i);
-    } else if ( i % 15 == 0 ) {
-        i = `fizzBuzz`;
-        console.log(i);
+        console.log(`Buzz`);
+    } else if ( i % 3 == 0 ) {
+        console.log(`Fizz`);
     } else {console.log(i);
      }
 
-
-     
 }
 
 }
-
     
-generaNumeri (20);
+generaNumeri (100);
 
